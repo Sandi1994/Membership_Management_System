@@ -894,3 +894,144 @@ html {
     box-shadow: 0 5px 12px rgba(185, 45, 59, 0.25);
 }
 
+/* Bootstrap Icons */
+.bi {
+    display: inline-block;
+    font-family: "bootstrap-icons" !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.module-icon i {
+    font-size: 22px;
+    color: #087f78;
+}
+
+.side-link i {
+    font-size: 18px;
+}
+
+
+
+/* ================================================
+   COMMON MEMBERSHIP SYSTEM FORM STYLES
+   Shared by profile forms and other system forms.
+   Add class="profile-form" to the form element.
+================================================ */
+
+.profile-form {
+    background: linear-gradient(135deg, #e6f0df, #dcefe2, #c7dfa2);
+    padding: 32px;
+    border: 1px solid #c5ddc5;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(52, 75, 60, 0.08);
+}
+
+.profile-form .form-label {
+    color: #344b3c;
+    font-size: 13px;
+    font-weight: 750;
+    margin-bottom: 10px;
+}
+
+.profile-form .form-control {
+    min-height: 52px;
+    background: #fffef8;
+    color: #344b3c;
+    border: 1px solid #b9d3bc;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 14px;
+    box-shadow: none;
+    transition: all 0.25s ease;
+}
+
+.profile-form .form-control:hover {
+    border-color: #087f78;
+    background: #ffffff;
+}
+
+.profile-form .form-control:focus {
+    border-color: #087f78;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(8, 127, 120, 0.13);
+}
+
+.profile-form .input-group-text {
+    background: #087f78;
+    color: #ffffff;
+    border: 1px solid #087f78;
+    min-width: 50px;
+    justify-content: center;
+    border-radius: 10px 0 0 10px;
+}
+
+.profile-form .input-group .form-control {
+    border-radius: 0 10px 10px 0;
+}
+
+.profile-form .readonly-field {
+    background: #dcefe2 !important;
+    color: #526b59 !important;
+    border-color: #b9d3bc !important;
+    cursor: not-allowed;
+}
+
+.profile-form .form-control::placeholder {
+    color: #9aaa9b;
+}
+
+/* Common action buttons */
+.save-button {
+    background: linear-gradient(135deg, #087f78, #344b3c);
+    color: #ffffff;
+    border: none;
+    border-radius: 11px;
+    padding: 13px 26px;
+    font-size: 13px;
+    font-weight: 750;
+    box-shadow: 0 5px 14px rgba(8, 127, 120, 0.18);
+    transition: all 0.25s ease;
+}
+
+.save-button:hover {
+    background: #075d57;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.cancel-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fffef8;
+    color: #344b3c;
+    border: 1px solid #b9d3bc;
+    border-radius: 11px;
+    padding: 13px 24px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cancel-button:hover {
+    background: #dcefe2;
+    color: #087f78;
+    border-color: #087f78;
+}
+
+@media (max-width: 576px) {
+    .profile-form {
+        padding: 20px;
+    }
+
+    .save-button,
+    .cancel-button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}

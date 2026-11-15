@@ -196,9 +196,9 @@ if ($initials === '') {
 
         rel="stylesheet"
 
-        href="https\://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 
-    >
+    
 
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -1148,7 +1148,9 @@ if ($initials === '') {
                 <?php elseif ($isMember): ?>
                     <div class="side-divider"></div>
                     <div class="side-heading">MY ACCOUNT</div>
-                    <span class="side-link disabled-module"><i class="bi bi-person-circle"></i> My Profile</span>
+                    <a class="side-link" href="my_profile.php">
+                        <i class="bi bi-person-circle"></i> My Profile
+                    </a>
                     <span class="side-link disabled-module"><i class="bi bi-award"></i> My Membership</span>
                     <span class="side-link disabled-module"><i class="bi bi-file-earmark-text"></i> My Applications</span>
                     <span class="side-link disabled-module"><i class="bi bi-credit-card"></i> My Payments</span>
@@ -1157,7 +1159,9 @@ if ($initials === '') {
                 <?php else: ?>
                     <div class="side-divider"></div>
                     <div class="side-heading">MY ACCOUNT</div>
-                    <span class="side-link disabled-module"><i class="bi bi-person-circle"></i> My Profile</span>
+                    <a class="side-link" href="my_profile.php">
+                        <i class="bi bi-person-circle"></i> My Profile
+                    </a>
                     <span class="side-link disabled-module"><i class="bi bi-file-earmark-text"></i> My Applications</span>
                     <span class="side-link disabled-module"><i class="bi bi-credit-card"></i> My Payments</span>
                     <span class="side-link disabled-module"><i class="bi bi-person-plus"></i> Apply for Membership</span>
@@ -1224,7 +1228,30 @@ if ($initials === '') {
                 <p class="intro">Welcome to your membership account. You can manage your own profile and access your membership services here.</p>
                 <h2 class="section-title">My Membership</h2>
                 <div class="row g-4">
-                    <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-person-circle"></i></div><h3>My Profile</h3><p>View and update your personal contact information.</p></div></div>
+                    <div class="col-md-6 col-xl-4">
+                        <a href="my_profile.php"
+                        class="text-decoration-none text-reset d-block h-100">
+
+                            <div class="module-card linked">
+
+                                <div class="module-icon">
+                                    <i class="bi bi-person-circle"></i>
+                                </div>
+
+                                <h3>My Profile</h3>
+
+                                <p>
+                                    View and update your personal contact information.
+                                </p>
+
+                                <span class="module-status">
+                                    View My Profile
+                                    <i class="bi bi-arrow-right"></i>
+                                </span>
+
+                            </div>
+                        </a>
+                    </div>
                     <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-award"></i></div><h3>My Membership</h3><p>View your membership information, membership number and current status.</p></div></div>
                     <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-file-earmark-text"></i></div><h3>My Applications</h3><p>Track your membership applications and upgrade requests.</p></div></div>
                     <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-credit-card"></i></div><h3>My Payments</h3><p>View your payment history and outstanding payments.</p></div></div>
@@ -1236,7 +1263,17 @@ if ($initials === '') {
                 <p class="intro">Welcome to your account. You can manage your profile and apply for membership when you are ready.</p>
                 <h2 class="section-title">My Account</h2>
                 <div class="row g-4">
-                    <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-person-circle"></i></div><h3>My Profile</h3><p>View and update your personal contact information.</p></div></div>
+                    <a href="my_profile.php" class="dashboard-card profile-tile">
+
+                        <div class="card-icon">
+                            <i class="bi bi-person-circle"></i>
+                        </div>
+
+                        <h3>My Profile</h3>
+
+                        <p>View and update your personal contact information.</p>
+
+                    </a>
                     <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-person-plus"></i></div><h3>Apply for Membership</h3><p>Choose an eligible membership tier and submit an application.</p></div></div>
                     <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-file-earmark-text"></i></div><h3>My Applications</h3><p>View the status of your membership applications.</p></div></div>
                     <div class="col-md-6 col-xl-4"><div class="module-card"><div class="module-icon"><i class="bi bi-credit-card"></i></div><h3>My Payments</h3><p>View your payment information and upload payment slips when requested.</p></div></div>
